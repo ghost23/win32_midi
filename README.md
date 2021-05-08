@@ -1,6 +1,11 @@
 # win32_midi
 
-A new flutter plugin project.
+This is more of a proof of concept to show how to connect flutter to a Win32 api via dart:ffi
+and get an async callback.
+
+If you're interested, the method in question here is `Win32Midi.openMidiInput(...)` in ./lib/win32_midi.dart
+and its counterpart `openMidiInput(...)` in ./windows/win32_midi_plugin.cpp, which is taking
+an async callback.
 
 ## Getting Started
 
