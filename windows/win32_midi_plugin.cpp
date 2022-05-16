@@ -91,7 +91,7 @@ UINT getMidiDeviceIndexes() {
 
 MIDIINCAPS getMidiInDeviceCapabilities(int i) {
     MIDIINCAPS caps;
-    midiInGetDevCaps(i, &caps, 32);
+    midiInGetDevCaps(i, &caps, sizeof(MIDIINCAPS));
     return caps;
 }
 
